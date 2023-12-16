@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SeleniumSuite" parallel="tests">
+	<listeners>
+		<listener
+			class-name="org.walnut.core.listeners.MyTestlistener">
+		</listener> 
+	</listeners>
+	<test name="TestChrome">
+		<parameter name="browser" value="chrome" />
+		<groups>
+		<run>
+		<include name="group2"></include>
+		</run>
+		</groups>
+		<classes>
+			 <class name="org.walnut.irctc.test.HomePageTest"/>
+		</classes>
+	</test>
+	 <test name="TestFirefox"> 	
+	<parameter name="browser" value="chrome"/> 
+	<groups>
+		<run>
+		<include name="group2"></include>
+		</run>
+		</groups>
+		<classes> 
+		 <class name="org.walnut.irctc.test.HomePageTest"/>
+		 </classes> 
+		 </test>-->
+</suite>

@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" parallel="none">
+
+    <test name="MyTest">
+    <groups>
+    <run>
+    <include name="group3"></include>
+    <include name="group2"></include>
+    
+    </run>
+    </groups>
+        <classes>
+            <!-- Specify test classes here -->
+            <class name="org.walnut.irctc.test.HomePageTest"/>
+            
+            <!-- Add more classes as needed -->
+            
+        </classes>
+       
+    </test>
+    <listeners>
+    <listener class-name="org.walnut.core.listeners.ExtentReportListener"></listener>
+    </listeners>
+</suite>

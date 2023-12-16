@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" parallel="none">
+<suite-files>
+<suite-file path=".\src\test\resources\suite1.xml"></suite-file>
+<suite-file path=".\src\test\resources\suite2.xml"></suite-file>
+</suite-files>
+<test name="group3test">
+
+		<groups>
+			<run>
+				<include name="group3"></include>
+
+
+			</run>
+		</groups>
+		<classes>
+			<!-- Specify test classes here -->
+			<class name="org.walnut.irctc.test.HomePageTest" />
+		</classes>
+
+	</test>
+<listeners>
+		<listener
+			class-name="org.walnut.core.listeners.ExtentReportListener"></listener>
+		<listener class-name="org.walnut.reporting.CustomReporter"></listener>
+		<listener class-name="org.walnut.core.listeners.MyResultListlistener"></listener>
+	</listeners>
+</suite>
+

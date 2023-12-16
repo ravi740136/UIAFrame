@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seleniumConfig>
+	<browserDetails>
+		<browser name="chrome">
+			<driverPath>D:\\apps\\selenium\\chromedriver\\chromedriver-win64\\chrome.exe
+			</driverPath>
+			<headless>false</headless>
+		</browser>
+		<browser name="firefox">
+			<driverPath>/path/to/geckodriver</driverPath>
+			<headless>false</headless>
+		</browser>
+		<!-- Additional browser configurations -->
+	</browserDetails>
+	<timeouts>
+		<implicit>60</implicit>
+		<pageload>60</pageload>
+	</timeouts>
+	<environment>
+		<dev>
+			<url>https://www.example.com</url>
+			<!-- Other environment-specific settings -->
+		</dev>
+		<test>
+			<url>https://www.example.com</url>
+			<!-- Other environment-specific settings -->
+		</test>
+	</environment>
+	<testData>
+		<credentials>
+			<user id="0001">
+				<username>user123</username>
+				<password>pass456</password>
+			</user>
+			<user id="0002">
+				<username>user123</username>
+				<password>pass456</password>
+			</user>
+		</credentials>
+		<!-- Other test data -->
+	</testData>
+	<!-- Other configuration sections -->
+</seleniumConfig>
